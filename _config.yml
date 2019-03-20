@@ -1,9 +1,15 @@
-title: Your awesome title
-email: sierra.v.moore@gmail.com
-description: ""
-baseurl: "/file_structure"
-url: "https://sierramoore.github.io"
-github_username:  sierramoore
+# General
+permalink   : /:categories/:title/
+highlighter : rouge
+
+title: Harbor
+description: "All-in-one 401(k) plan"
+keywords: affordable, modern, 401(k), retirement, full-service, automated, pre-tax, auto-enrollment, HR-tech, Fintech, Chicago, Illinois, mobile, compliance, fiduciary
+repository: https://github.com/VestHQ/HarborHQ
+email: tripathi@vesthq.com
+url: https://harborhq.com
+
+baseurl: ""
 
 sass:
   sass_dir: _sass
@@ -18,9 +24,9 @@ theme: minima
 
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+#  - jekyll-sitemap
 #  - jekyll-autoprefixer
-
+#
 #autoprefixer:
 #  browsers:
-#  - last 10 versions
+#  - last 6 versions
