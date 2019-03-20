@@ -5,11 +5,10 @@ highlighter : rouge
 title: Harbor
 description: "All-in-one 401(k) plan"
 keywords: affordable, modern, 401(k), retirement, full-service, automated, pre-tax, auto-enrollment, HR-tech, Fintech, Chicago, Illinois, mobile, compliance, fiduciary
-repository: https://github.com/VestHQ/HarborHQ
 email: tripathi@vesthq.com
 url: https://harborhq.com
-
-baseurl: ""
+repository: https://github.com/VestHQ/HarborHQ
+google_analytics: UA-122850848-1
 
 sass:
   sass_dir: _sass
