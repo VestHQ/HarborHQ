@@ -1,12 +1,18 @@
 .btn {
+  display: inline-block;
+  color: $blue;
+  background-color: $light-grey;
   font-family: $inter-regular;
-  font-size: 1.3rem;
-  text-align: center;
-  background: $blue-light;
-  color: #fff;
-  padding: 1rem 1.5rem;
-  border-radius: .5rem;
+  font-size: 1.6rem;
+  font-weight: 500 !important;
+  border: none;
+  border-radius: .5rem !important;
+  margin: 1rem auto;
+  padding: 1.4rem 2.5rem;
   text-decoration: none;
-  width: 33.333%;
-  align-self: flex-end;
+  text-align: center;
+  cursor: pointer;
+
+  min-width: 9rem;
 }
+

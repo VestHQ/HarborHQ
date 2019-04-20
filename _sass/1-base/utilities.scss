@@ -8,3 +8,15 @@
 .highlight {
   color: $blue-light;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto 1rem auto;
+  width: 100%;
+}
+
+.u-blue {
+  color: $blue;
+}

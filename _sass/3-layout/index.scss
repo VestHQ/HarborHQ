@@ -1,30 +1,42 @@
 .container {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../assets/images/bg1.jpeg);
 
-  @include respond(mid-phone) {
-    flex-direction: column;
+  background-size: cover;
+  background-position: top;
+
+  //@include respond(mid-phone) {
+  //  flex-direction: column;
+  //}
+
+  .form-container {
+    min-width: 30rem;
   }
 
-  .image {
-    height: 100vh;
-    width: 50vw;
-    background: url("../../assets/images/boat.jpg");
-    background-size: cover;
-    background-position: top;
-    @include respond(mid-phone) {
-      //clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
-      //background-position: center;
-      //width: 100vw;
-      //height: 25vh;
-      //margin-bottom: 4rem;
-      display: none;
-    }
+  .form-header {
+    display: flex;
+    margin-bottom: 5rem;
+
     &__header {
+      font-family: $inter-semi-bold;
+      font-weight: 500;
+      color: $mid-grey;
+      font-size: 3rem;
+    }
+    &__img {
+      width: auto;
+      height: 6rem;
+      margin-right: 18%;
     }
   }
+
   .form {
+    margin-left: 50%;
     width: 50vw;
+    background: rgba(255, 255, 255, 0.93);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,16 +44,9 @@
     font-family: $inter-regular;
     position: relative;
 
-    &__logo {
-      color: $dark-blue;
-      text-align: center;
-      font-size: 2.8rem;
-      margin-bottom: 5rem;
-      &::before {
-        content: url("../../assets/images/harbor-small.png");
-        padding: .5rem;
-      }
-    }
+   .form__header {
+
+   }
     &__header {
       font-family: $inter-light;
       font-weight: 300;
@@ -51,23 +56,38 @@
       margin-bottom: 4rem;
     }
     &__label {
+      display: block;
+      font-size: 1.4rem;
+      color: $mid-grey;
+      transition: all 0.3s ease;
     }
     &__input {
-      border: 1px solid $grey-blue;
+      display: block;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $mid-grey;
       padding: 1rem 1.5rem;
-      width: 20rem;
+
+      width: 100%;
+      min-width: 27rem;
       margin-bottom: 1rem;
+
+      transition: all 0.3s ease;
+
       &:focus,
       &:active {
         outline: none;
-        border: 1px solid $blue-light;
-        box-shadow: 1px 1px $blue-light;
+        border-bottom: 1px solid $blue;
+
+        +label {
+          color: $blue;
+        }
       }
     }
     &__sign-up {
       font-family: $inter-regular;
-      color: $blue-light;
-      text-align: left;
+      color: $blue;
+      text-align: right;
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
@@ -76,6 +96,11 @@
       width: 100vw;
       height: 100vh;
     }
+
+    &__legal {
+      text-align: center;
+      color: $mid-grey;
+    }
   }
 }
 
@@ -83,4 +108,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1.5rem;
 }
