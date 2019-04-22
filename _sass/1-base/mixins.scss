@@ -9,8 +9,14 @@
   @if $breakpoint == small-phone {
     @media (max-width: 25em) { @content } //320px
   }
+  @if $breakpoint == sm {
+    @media (max-width: 450px) { @content } //500px
+  }
   @if $breakpoint == mid-phone {
     @media (max-width: 31.25em) { @content } //500px
+  }
+  @if $breakpoint == mid {
+    @media (max-width: 550px) { @content } //500px
   }
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content } //600px
