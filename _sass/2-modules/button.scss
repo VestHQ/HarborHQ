@@ -4,15 +4,14 @@
   background-color: $light-grey;
   font-family: $inter-regular;
   font-size: 1.6rem;
-  font-weight: 500 !important;
+  font-weight: 500;
   border: none;
-  border-radius: .5rem !important;
+  border-radius: .5rem;
   margin: 1rem auto;
   padding: 1.4rem 2.5rem;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
 
-  min-width: 9rem;
+  //min-width: 9rem;
 }
-

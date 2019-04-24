@@ -11,4 +11,34 @@
 	  'page': '{{ site.baseurl }}{{ page.url }}',
 	  'title': '{{ page.title | replace: "'", "\\'" }}'
 	});
+
+
+	// const images = [
+	//     "{{ site.baseurl }}/assets/images/bg1.jpeg",
+	//     "{{ site.baseurl }}/assets/images/bg2.jpg",
+	//     "{{ site.baseurl }}/assets/images/bg3.jpg",
+	//     "{{ site.baseurl }}/assets/images/bg4.jpg",
+	//     "{{ site.baseurl }}/assets/images/bg5.jpg"
+    // ];
+    const images = [
+        "https://harborhq.com/assets/images/bg1.jpeg",
+        "https://harborhq.com/assets/images/bg2.jpg",
+        "https://harborhq.com/assets/images/bg3.jpg",
+        "https://harborhq.com/assets/images/bg4.jpg",
+        "https://harborhq.com/assets/images/bg5.jpg",
+    ];
+
+
+    function randImg() {
+        const size = images.length;
+        const x = Math.floor(size * Math.random());
+        document.getElementById('image').style.backgroundImage = images[x];
+
+        document.body.style.backgroundImage = images[x];
+        console.log(images[x])
+        console.log(document.getElementById('image'));
+        console.log(document.getElementById('image').style);
+    }
+
+    window.onload = randImg();
 </script>

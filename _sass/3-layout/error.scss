@@ -1,24 +1,13 @@
-.btn {
+.error-body {
   font-family: $inter-regular;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
-  border-radius: 2px;
-  text-align: center;
-  padding: 1rem 1.4rem;
-  text-decoration: none;
-}
-
-  .error-body {
-    font-family: $inter-regular;
-    background: $blue-mid-2;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: $blue-mid-2;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  margin-top: 8%;
 
   .lost {
     display: flex;
@@ -30,55 +19,54 @@
       color: $dark-blue;
       font-size: 2.8rem;
       letter-spacing: 1px;
-      margin: 3rem auto;
+      margin: 3.8rem auto;
       text-align: center;
 
       @include respond(m-phone) {
         font-size: 2.4rem;
         margin: 2rem 1rem;
       }
-    }
-
+  }
     &__text {
-      color: $dark-blue;
-      font-size: 1.8rem;
-      text-align: center;
-      width: 80%;
-      max-width: 70rem;
-      margin-bottom: 4rem;
+     color: $dark-blue;
+     font-size: 1.8rem;
+     text-align: center;
+     width: 80%;
+     max-width: 70rem;
+     margin-bottom: 4.8rem;
 
-      @include respond(m-phone) {
-        font-size: 1.6rem;
-      }
+     @include respond(m-phone) {
+       font-size: 1.6rem;
+     }
+  }
+
+  &__img {
+    width: 40rem;
+    height: auto;
+
+    @include respond(phone) {
+      width: 32rem;
     }
-
-    &__img {
-      width: 40rem;
-      height: auto;
-
-      @include respond(phone) {
-        width: 32rem;
-      }
-      @include respond(m-phone) {
-        width: 28rem;
-      }
+    @include respond(m-phone) {
+      width: 28rem;
     }
+  }
 
-    &__btn {
-      background-color: $yellow;
-      border: 2px solid $yellow;
-      font-family: $inter-regular;
-      color: $dark-blue;
-      padding: 1rem 1.4rem;
-      transition: background-color .6s;
+  &__btn {
+    background-color: $yellow;
+    border: 2px solid $yellow;
+    font-family: $inter-regular;
+    color: $dark-blue;
+    padding: 1rem 1.8rem;
+    transition: background-color .6s;
+    align-self: center;
+    display: inline-block;
+    max-width: 12rem;
 
-      align-self: center;
-      display: inline-block;
-      max-width: 12rem;
-
-      &:hover {
-        background-color: transparent;
-      }
+    &:hover {
+      background-color: transparent;
     }
+  }
+
   }
 }
