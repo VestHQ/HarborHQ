@@ -25,3 +25,8 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
